@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 27: TODO list in angular';
-  list:any[]=[];
-  addTask(item:string){
-    this.list.push({id:this.list.length, name:item});
+  title = 'Lecture 28: pass data parent to child component';
+  data=10;
+
+  updateChild(){
+    this.data=Math.floor(Math.random()*1000);
   }
-  removeTask(id:Number){
-    this.list=this.list.filter(item=>item.id!==id);
-  }
+  
 }
