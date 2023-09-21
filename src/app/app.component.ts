@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 28: pass data parent to child component';
-  data=10;
+  title = 'Lecture 29: Reusable component ';
 
-  updateChild(){
-    this.data=Math.floor(Math.random()*1000);
-  }
+  userDetails=[
+    {name:'Shuvo Bangal', email:'shuvo@test.com'},
+    {name:'Shyamapada Chowdhury', email:'shyam@test.com'},
+    {name:'Pritam Chanda', email:'pritam@test.com'},
+    {name:'nitish kumar', email:'nitish@test.com'},
+  ];
+ 
   
 }
