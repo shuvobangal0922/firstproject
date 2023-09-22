@@ -6,9 +6,10 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 32: Template reference variable ';
-  getValue(item:any){
-    console.warn(item);
+  title = 'Lecture 34: Pipes in Angular ';
+  object={
+    name:"Shuvo",
+    age:22
   }
   
 }

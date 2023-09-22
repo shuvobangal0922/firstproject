@@ -1,3 +1,6 @@
-<h1>{{title}}</h1>
-<input type="text" #box>
-<button (click)="getValue(box.value)">submit</button>
+<h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title | slice:5:16|lowercase}}</h1>
+<h2>{{"babar holo abar jor sarilo ousodhe" | titlecase}}</h2>
+<h2>{{object|json|uppercase}}</h2>
+<h3>{{100000 | currency:"USD"}}</h3>
