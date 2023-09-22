@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    UsdInrPipe,
   ],
   imports: [
     BrowserModule,

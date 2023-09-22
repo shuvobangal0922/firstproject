@@ -6,10 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 34: Pipes in Angular ';
-  object={
-    name:"Shuvo",
-    age:22
-  }
+  title = 'Lecture 36: Custom pipes ';
+  
   
 }
