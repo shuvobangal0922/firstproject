@@ -6,7 +6,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 36: Custom pipes ';
-  
+  title = 'Lecture 38: Forms';
+  userLogin(item:any){
+    console.warn(item);
+  }
   
 }

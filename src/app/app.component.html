@@ -1,3 +1,8 @@
 <h1>{{title}}</h1>
-<h2>USD to INR converter</h2>
-<h3>{{10|usdInr:83}}</h3>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)" >
+    <input type="text" name="username" placeholder="Enter username" ngModel>
+    <br><br>
+    <input type="password" name="password" placeholder="Enter password" ngModel>
+    <br><br>
+    <button>Login</button>
+</form>
