@@ -6,14 +6,10 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 29: Reusable component ';
-
-  userDetails=[
-    {name:'Shuvo Bangal', email:'shuvo@test.com'},
-    {name:'Shyamapada Chowdhury', email:'shyam@test.com'},
-    {name:'Pritam Chanda', email:'pritam@test.com'},
-    {name:'nitish kumar', email:'nitish@test.com'},
-  ];
- 
+  title = 'Lecture 30: Sending data from child to parent ';
+  currentValue="Welcome";
+  updateData(name:string ){
+    this.currentValue=name;
+  }
   
 }

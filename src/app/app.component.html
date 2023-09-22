@@ -1,7 +1,5 @@
 <h1>{{title}}</h1>
-<div style="border: 2px solid crimson; width:40%;">
-  <ul *ngFor="let user of userDetails">
-    <app-user-details [item]='user'></app-user-details>
-  </ul>
-</div>
+
+<h3 style="color: red;">Current Value is: {{currentValue}}</h3>
+<app-child (updateDataEvent)="updateData($event)"></app-child>
 
