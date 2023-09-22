@@ -1,5 +1,3 @@
 <h1>{{title}}</h1>
-<p>Two way binding is nothing but updating and displaying some properties at the same time. </p>
-<p><span>The following is an example.</span></p>
-Enter something to display: <input type="text" [(ngModel)]="data">
-<h3>Your entered value is : {{data}} </h3>
+<input type="text" #box>
+<button (click)="getValue(box.value)">submit</button>

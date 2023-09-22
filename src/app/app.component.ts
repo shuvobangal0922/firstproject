@@ -6,7 +6,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 31: Two way binding ';
-  data:any;
+  title = 'Lecture 32: Template reference variable ';
+  getValue(item:any){
+    console.warn(item);
+  }
   
 }
