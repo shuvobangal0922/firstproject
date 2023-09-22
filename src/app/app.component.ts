@@ -6,10 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 30: Sending data from child to parent ';
-  currentValue="Welcome";
-  updateData(name:string ){
-    this.currentValue=name;
-  }
+  title = 'Lecture 31: Two way binding ';
+  data:any;
   
 }

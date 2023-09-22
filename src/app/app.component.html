@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
-
-<h3 style="color: red;">Current Value is: {{currentValue}}</h3>
-<app-child (updateDataEvent)="updateData($event)"></app-child>
-
+<p>Two way binding is nothing but updating and displaying some properties at the same time. </p>
+<p><span>The following is an example.</span></p>
+Enter something to display: <input type="text" [(ngModel)]="data">
+<h3>Your entered value is : {{data}} </h3>
