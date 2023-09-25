@@ -5,7 +5,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture 42: Custom Directives';
+  title = 'Lecture-45: 404 page';
  
 }
   
