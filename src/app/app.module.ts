@@ -4,13 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RedElDirective } from './directives/red-el.directive';
+import { UserComponent } from './user/user.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RedElDirective,
+    UserComponent,
+    HomeComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
