@@ -1,8 +1,7 @@
-.footer {
-    background-color: #098b97;
-    color: white;
-    width: 99%;
+.footer{
     position: absolute;
     bottom: 0;
-   
+    background-color: rgba(184, 35, 80, 0.74);
+    color: aliceblue;
+    width: 99%;
 }

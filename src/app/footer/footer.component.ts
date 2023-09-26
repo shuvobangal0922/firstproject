@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserdataService} from '../services/userdata.service'
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  memberData=[
-    {name:"Shuvo Bangal", email:"shuvo@test.com"},
-    {name:"Shyam Chowdhury", email:"shyam@test.com"},
-    {name:"Peter Parker", email:"peter@test.com"},
-    {name:"Tom Holand", email:"tom@test.com"},
-  ]
+  users:any;
+  constructor(private userData:UserdataService){
+    this.users=userData.users();
+  }
 }
