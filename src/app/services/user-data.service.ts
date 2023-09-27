@@ -12,8 +12,11 @@ export class UserDataService {
     
 
    }
-   url="https://randomuser.me/api/";
+   url="http://localhost:3000/users";
    users(){
     return this.http.get(this.url);
+   }
+   saveUsers(data:any){
+    return this.http.post(this.url,data)
    }
 }

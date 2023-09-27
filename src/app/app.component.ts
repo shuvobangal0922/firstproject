@@ -6,7 +6,7 @@ import {UserDataService} from './services/user-data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture-46: API in Angular';
+  title = 'Lecture-46: post API method';
 
   usersInfo:any;
   constructor(private userdata:UserDataService){
@@ -17,6 +17,18 @@ export class AppComponent {
        // console.warn("data", data);
       );
     
+    
+  }
+
+  getUserFormData(data:any){
+    
+    this.userdata.saveUsers(data).subscribe(
+      (result)=>{
+        console.warn(result);
+        
+      }
+
+    )
     
   }
   

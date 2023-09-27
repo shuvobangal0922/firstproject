@@ -2,3 +2,10 @@
 <ul>
     <li *ngFor="let user of usersInfo">{{user.name}}</li>
 </ul>
+<form  #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+    <input type="text" ngModel name="name" placeholder="Enter name"><br><br>
+    <input type="email" ngModel name="email" placeholder="Enter email"><br><br>
+    <input type="password"ngModel name="Enter password" placeholder="Enter password"><br><br>
+    <button>Add New User</button>
+</form>
+
