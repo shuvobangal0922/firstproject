@@ -7,7 +7,7 @@ import {dataType} from './user-datatype';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture-51: Model and Interface';
+  title = 'Lecture-54: Group Routing';
   
   getData(){
     const data:dataType={
