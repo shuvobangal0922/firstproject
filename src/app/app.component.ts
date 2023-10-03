@@ -1,5 +1,4 @@
-import { Component} from '@angular/core';
-import {dataType} from './user-datatype';
+import { Component,} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,17 +6,9 @@ import {dataType} from './user-datatype';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture-54: Group Routing';
+  title = 'Lecture-55: Lazy Loading';
+
   
-  getData(){
-    const data:dataType={
-      name: "Shuvo Bangal",
-      indian: true,
-      age: 0,
-      address:"BC-150, kestopur"
-    };
-    return data;
-  }
  
 }
   
