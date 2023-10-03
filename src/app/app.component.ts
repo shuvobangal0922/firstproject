@@ -6,9 +6,7 @@ import { Component,} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lecture-55: Lazy Loading';
-
-  
+  title = 'Lecture-55: unit testing';
  
 }
   
